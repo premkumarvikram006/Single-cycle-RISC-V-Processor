@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project implements a 32-bit single-cycle RISC-V processor in Verilog based on a subset of the RV32I ISA. The processor supports arithmetic, logical, memory, branch, and jump instructions and demonstrates the complete instruction execution flow including fetch, decode, execute, memory access, and writeback.
+This project implements a 32-bit single-cycle RISC-V processor in Verilog based on a subset of the RV32I ISA. The processor supports arithmetic, logical, memory, branch, and jump instructions and demonstrates the complete instruction execution flow, including fetch, decode, execute, memory access, and writeback.
 
 ---
 
@@ -104,13 +104,13 @@ JAL  x0, target
    - riscv_cpu.v
    - tb_riscv_cpu.v
 
-2. Add `program.mem` to simulation sources.
+2. Add `program.mem` to design sources as a memory file.
 
 3. Set `tb_riscv_cpu.v` as the top module.
 
 4. Run simulation.
 
-5. Add these signals to waveform:
+5. Add these signals to the waveform:
    - pc_current
    - instruction
    - opcode
